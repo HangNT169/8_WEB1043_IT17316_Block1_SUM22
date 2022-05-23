@@ -39,12 +39,24 @@ console.log(hoaLoaKen.mauSac + " - " + hoaLoaKen.soCanh);
  * Class : Co 2 cach
  */
 // C1
+// Giong Class bt
 class Hoa {
   mauSac;
   soCanh;
   // contructor,...
 }
 // c2
+/*
+    Cú pháp:
+
+    function tenlop (tenbien1, tenbien2…){
+        tenthuoctinh1 = tenbien1;
+        tenthuoctinh2 = tenbien2;
+        tenphuongthuc = function(){
+            Viết mã cho phương thức ở đây
+        }
+    }
+*/
 function Dog(name, tuoi) {
   this.name = name;
   this.tuoi = tuoi;

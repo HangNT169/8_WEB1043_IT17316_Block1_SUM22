@@ -87,3 +87,15 @@ var comments = [];
 comments[0] = comment;
 comment.title = "Tieu de 1";
 comment.content = "Noi dung 1";
+
+function ThucVat(maTV, canNang, chieuCao) {
+  this.maTV = maTV;
+  this.canNang = canNang;
+  this.chieuCao = chieuCao;
+  this.inThongTin = function () {
+    console.log(this.maTV);
+  };
+}
+
+let tv = new ThucVat("1", 10, 2);
+tv.inThongTin();

@@ -71,7 +71,8 @@ Dog[2] = new Dog("cho3", 10);
 Dog[3] = new Dog("cho4", 2);
 
 for (let i in Dog) {
-  console.log(Dog[i].name);
+  // console.log(Dog[i].name);
+  console.log(Dog[i].tiengKeu());
 }
 
 // Khai bao mang

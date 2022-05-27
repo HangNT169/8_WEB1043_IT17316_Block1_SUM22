@@ -17,21 +17,40 @@
       </div>
     </div> -->
     <!-- Bai 1-->
-    <button onclick="hienThiAnh();">Hien thi anh</button>
-    <p id="hienThi"></p>
+    <!-- <button onclick="hienThiAnh();">Hien thi anh</button>
+    <p id="hienThi"></p> -->
     <!-- Bai 2-->
-    <div id="demo">nội dung ví dụ</div>
-    <button onclick="add_child()">KẾT QUẢ</button>
+    <!-- <div id="demo">nội dung ví dụ</div>
+    <button onclick="add_child()">KẾT QUẢ</button> -->
     <!-- Bai 3-->
-    <div id="demo">
+    <!-- <div id="demo">
       <p id="p1">This is a paragraph.</p>
       <p id="p2">This is another paragraph.</p>
-    </div>
+    </div> -->
     <!-- Demo-->
 
     <!-- <p class="header">The P</p>
     <p id="content">P2</p>
     <a href="#">Link</a> -->
-    <script type="text/javascript" src="../B8_Dom/index1.js"></script>
+
+    <!--Bai 1_BTVN-->
+    <input id="soThuNhat" type="text" />
+    <input id="soThuHai" type="text" />
+    <button onclick="congHaiSo();">Cong</button>
+    <button>Tru</button>
+    <button>Nhan</button>
+    <button>Chia</button>
+    <span>Ket qua</span>
+    <span id="ketQua"></span>
+    <script>
+      function congHaiSo() {
+        let soThuNhat = document.getElementById("soThuNhat");
+        let soThuHai = document.getElementById("soThuHai");
+        let tong = Number(soThuNhat.value) + Number(soThuHai.value);
+        let ketQua = document.getElementById("ketQua");
+        ketQua.innerHTML = tong;
+      }
+    </script>
+    <!-- <script type="text/javascript" src="../B8_Dom/index1.js"></script> -->
   </body>
 </html>

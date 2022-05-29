@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="LuyenTapBuoi9.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>BÀI 1</p>
+    <div class="Bai1">
+      <input type="text" id="input1" required /><br />
+      <input type="text" id="input2" required />
+      <button id="cong" onclick="tinhToan('cong');">CỘNG</button>
+      <button id="tru" onclick="tinhToan('tru');">TRỪ</button>
+      <button id="nhan" onclick="tinhToan('nhan');">NHÂN</button>
+      <button id="chia" onclick="tinhToan('chia');">CHIA</button>
+      <p id="kq">Kết Quả Bài 1</p>
+    </div>
+    <p>--------------------------------------------</p>
+    <p>BÀI 2</p>
+    <div class="Bai2">
+      <input type="text" id="input3" required />
+      <button onclick="Add();">ADD</button>
+      <p>Danh sách input vừa Add</p>
+    </div>
+    <div id="resultBai2"></div>
+    <p>--------------------------------------------</p>
+    <p>BÀI 3</p>
+    <div class="Bai3">
+      <table>
+        <tr>
+          <td>1</td>
+          <td>Tiêu đề thứ nhất</td>
+          <td><button onclick="deleteRow(this);">Delete</button></td>
+          <!--Đối với event, "this" tương ứng với 1 phần tử HTML (ở đây là tag button) nhận event đó -->
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Tiêu đề thứ hai</td>
+          <td><button onclick="deleteRow(this);">Delete</button></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Tiêu đề thứ ba</td>
+          <td><button onclick="deleteRow(this);">Delete</button></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Tiêu đề thứ tư</td>
+          <td><button onclick="deleteRow(this);">Delete</button></td>
+        </tr>
+      </table>
+    </div>
+    <script type="text/javascript" src="LuyenTapBuoi9.js"></script>
+  </body>
+</html>

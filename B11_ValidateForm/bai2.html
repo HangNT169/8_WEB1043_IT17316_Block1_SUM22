@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h3>ĐĂNG KÝ KHOÁ HỌC ONLINE</h3>
+      <form class="registerForm" name="registerForm">
+        <!-- Dong 1 -->
+        <div class="inputContainer">
+          <span class="inputTitle">Họ tên</span>
+          <input class="inputText" type="text" required />
+          <span class="errorMessage" name="errorMessage"></span>
+        </div>
+        <!-- Dong 2 -->
+        <div class="inputContainer">
+          <span class="inputTitle">Email</span>
+          <input class="inputText" type="email" required />
+          <span class="errorMessage" name="errorMessage"></span>
+        </div>
+        <!-- Dong 3 -->
+        <div class="inputContainer">
+          <span class="inputTitle">Số điện thoại</span>
+          <input class="inputText" type="number" required />
+          <span class="errorMessage" name="errorMessage"></span>
+        </div>
+        <!-- Dong 4 -->
+        <div class="inputContainer">
+          <span class="inputTitle">Khoá học</span>
+          <select name="khoaHoc" id="khoaHoc" onchange="onChangeKhoaHoc();">
+            <option selected value="500">KHoá HTML</option>
+            <option value="800">KHoá JS</option>
+            <option value="1000">KHoá PHP</option>
+          </select>
+          <span class="errorMessage" name="errorMessage"></span>
+        </div>
+        <!-- Dong 5 -->
+        <div class="inputContainer">
+          <span class="inputTitle">Học phí</span>
+          <input id="hocPhi" class="inputText" type="number" required />
+          <span class="errorMessage" name="errorMessage"></span>
+        </div>
+        <!-- Dong 6 -->
+        <div class="inputContainer">
+          <span class="inputTitle">Hình thức học</span>
+          <input
+            class="radioBtn"
+            name="radioGroup"
+            type="radio"
+            value="TaiTruong"
+            checked
+            required
+          />
+          <span>Tại trường</span>
+          <input
+            class="radioBtn"
+            name="radioGroup"
+            type="radio"
+            value="HocOnline"
+            required
+          />
+          <span>Học online</span>
+        </div>
+        <!-- Button dang ki -->
+        <input
+          id="registerBtn"
+          type="button"
+          onclick="register();"
+          value="Đăng ký"
+        />
+      </form>
+    </div>
+    <script src="../B11_ValidateForm/bai2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>ĐĂNG KÍ THÀNH VIÊN</h3>
+      <form name="registForm" class="registForm">
+        <div class="inputContainer">
+          <span class="inputTitle"> Họ tên </span>
+          <input class="inputText" type="text" required />
+          <span class="errorMessage" name="errorMessage"></span>
+        </div>
+        <div class="inputContainer">
+          <span class="inputTitle"> Email </span>
+          <input class="inputText" type="email" required />
+          <span class="errorMessage" name="errorMessage"></span>
+        </div>
+        <div class="inputContainer">
+          <span class="inputTitle"> Số điện thoại </span>
+          <input class="inputText" type="text" required />
+          <span class="errorMessage" name="errorMessage"></span>
+        </div>
+        <div class="inputContainer">
+          <span class="inputTitle"> User </span>
+          <input class="inputText" type="text" minlength="8" required />
+          <span class="errorMessage" name="errorMessage"></span>
+        </div>
+        <div class="inputContainer">
+          <span class="inputTitle"> Pass </span>
+          <input name="password" class="inputText" type="password" required />
+          <span class="errorMessage" name="errorMessage"></span>
+        </div>
+        <div class="inputContainer">
+          <span class="inputTitle"> Repass </span>
+          <input name="password" class="inputText" type="password" required />
+          <span class="errorMessage" name="errorMessage"></span>
+        </div>
+        <div class="inputContainer">
+          <span class="inputTitle">Bạn biết chúng tôi </span>
+          <input
+            name="radioGroup"
+            class="radioBtn"
+            type="radio"
+            value="Bạn giới thiệu"
+            checked
+            required
+          />
+          <span>Bạn giới thiệu</span>
+          <input
+            class="radioBtn"
+            name="radioGroup"
+            type="radio"
+            value="Qua FB"
+            required
+          />
+          <span>Qua FB</span>
+        </div>
+        <input
+          id="registBtn"
+          type="button"
+          onclick="register();"
+          value="Đăng kí"
+        />
+      </form>
+    </div>
+    <script type="text/javascript" src="../B11_ValidateForm/index.js"></script>
+  </body>
+</html>
